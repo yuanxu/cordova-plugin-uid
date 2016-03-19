@@ -27,4 +27,14 @@
 		<source-file src="src/android/UID.java" target-dir="src/org/hygieiasoft/cordova/uid" />
 	</platform>
 
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="UID">
+				<param name="ios-package" value="CDVUID" />
+			</feature>
+		</config-file>
+		<header-file src="src/ios/CDVUID.h" />
+    <source-file src="src/ios/CDVUID.m" />
+	</platform>
+
 </plugin>
