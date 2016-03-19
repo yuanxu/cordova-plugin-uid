@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-	id="org.hygieiasoft.cordova.uid"
-	version="1.1.0">
+	id="org.ivanchaz.cordova.uid"
+	version="1.2.0">
 	<name>UID</name>
 	<description>Cordova plugin to get unique identifiers: UUID, IMEI, IMSI, ICCID and MAC.</description>
 	<license>MIT</license>
 	<keywords>cordova,uid,imei,imsi,uuid,sim,iccid,mac</keywords>
-	<repo>https://github.com/hygieiasoft/cordova-plugin-uid</repo>
-	<issue>https://github.com/hygieiasoft/cordova-plugin-uid/issues</issue>
+	<repo>https://github.com/ivanchaz/cordova-plugin-uid</repo>
+	<issue>https://github.com/ivanchaz/cordova-plugin-uid/issues</issue>
 
 	<js-module src="www/uid.js" name="uid">
 		<clobbers target="cordova.plugins.uid" />
