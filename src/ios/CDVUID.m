@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDV.h>
 #import "CDVUID.h"
-#include "OpenUDID.h"
+#import "OpenUDID.h"
 
 @implementation CDVUID
 
