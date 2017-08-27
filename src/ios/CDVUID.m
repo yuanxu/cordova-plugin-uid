@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDV.h>
 #import "CDVUID.h"
+#include "OpenUDID.h"
 
 @implementation CDVUID
 
@@ -19,6 +20,8 @@
  NSString* carrierName = [carrier carrierName];
  NSString* countryCode = [carrier mobileCountryCode];
  NSString* networkCode = [carrier mobileNetworkCode];
+
+ NSString* openUDID = [OpenUDID value];
 
  if (!carrierName) {
  carrierName = @"";
@@ -34,7 +37,7 @@
 
  NSString* result = [[carrierName stringByAppendingString:countryCode] stringByAppendingString:networkCode];
 
- NSDictionary *simData = [NSDictionary dictionaryWithObjectsAndKeys: result, @"iccid", nil];
+ NSDictionary *simData = [NSDictionary dictionaryWithObjectsAndKeys: openUDID, @"udid", nil];
 
  CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:simData];
 
